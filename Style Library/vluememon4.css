@@ -10,16 +10,25 @@
 //
 ///////////////////////////////////*/
 
+html, body
+{
+	min-width: 100%;
+	min-height: 100%;
+	
+	display: block;
+}
+
 body.vluememon4 
 {
-
+	display: block;
+	overflow: auto !important;
+	background-color: green;
 }
 
 
 .vluememon4 #s4-workspace
 {
-	
-	background-color: green;
+	overflow: visible;
 }
 
 .vluememon4 #s4-bodyContainer

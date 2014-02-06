@@ -19,9 +19,6 @@
 	<SharePoint:CssLink runat="server" Version="4"/>
 	<SharePoint:Theme runat="server"/>
 	<SharePoint:ULSClientConfig runat="server"/>
-	<script type="text/javascript">
-	var _fV4UI = true;
-	</script>
 	<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server"/>
 	<SharePoint:CustomJSUrl runat="server"/>
 	<SharePoint:SoapDiscoveryLink runat="server"/>
@@ -34,7 +31,7 @@
 	<SharePoint:SPHelpPageComponent Visible="false" runat="server"/>
 	<SharePoint:CssRegistration ID="CssRegistration3" Name="<% $SPUrl:~SiteCollection/Style Library/vluememon4.css %>" After="corev4.css" runat="server"/>
 </head>
-<body scroll="no" onload="if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();" class="v4master vluememon4">
+<body onload="if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();" class="v4master vluememon4">
   <form runat="server" onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}">
   <asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
 	<WebPartPages:SPWebPartManager id="m" runat="Server"/>
@@ -57,7 +54,9 @@
 </div>
 <a id="HiddenAnchor" href="javascript:;" style="display:none;"></a>
 <SharePoint:DelegateControl runat="server" ControlId="GlobalNavigation"/>
-<div id="s4-ribbonrow" class="s4-pr s4-ribbonrowhidetitle">
+<div id="s4-workspace" class=".s4-nosetwidth">
+		<div id="s4-bodyContainer">
+			<div id="s4-ribbonrowzzzz" class="s4-pr s4-ribbonrowhidetitle">
 	<div id="s4-ribboncont">
 		<SharePoint:SPRibbon
 			runat="server"
@@ -290,8 +289,7 @@
 		</asp:UpdatePanel>
 	</div>
 </div>
-<div id="s4-workspace" class=".s4-nosetwidth">
-		<div id="s4-bodyContainer">
+
 			<div id="s4-titlerow" class="s4-pr s4-notdlg s4-titlerowhidetitle">
 				<div class="s4-title s4-lp">
 					<div class="s4-title-inner">
