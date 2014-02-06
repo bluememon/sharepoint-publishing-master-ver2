@@ -1,0 +1,64 @@
+/*//////////////////////////////////
+//
+//	vluememon4.css
+//
+//	this is the styling template for a layout consisting of
+//
+//	*ribbon on top and fixed 100% width
+//	*content that stretches all the width of the screen but keeps a padding on the left and right
+//	*the layout has a minimum width but can stretch wide depending on content
+//
+///////////////////////////////////*/
+
+body.vluememon4 
+{
+
+}
+
+
+.vluememon4 #s4-workspace
+{
+	
+	background-color: green;
+}
+
+.vluememon4 #s4-bodyContainer
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+	padding: 0 45px 45px 45px;
+	display: table;
+	width: 100%;
+}
+
+.vluememon4 #s4-bodyContainer #s4-mainarea
+{
+	min-width: 1500px;
+	background-color: #ffffff;
+}
+
+.vluememon4 #s4-bodyContainer #s4-mainarea .vluememon4-footer
+{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+	height: 100px;
+	background-color: red;
+}
+
+
+
+
+/* fixes for the dialogs */
+.ms-dialog .vluememon4 #s4-bodyContainer
+{
+	padding: 0;
+}
+
+.ms-dialog .vluememon4 #s4-bodyContainer #s4-mainarea
+{
+	min-width: 0 !important;
+}
